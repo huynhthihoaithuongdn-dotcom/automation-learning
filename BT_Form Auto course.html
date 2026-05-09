@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Testing Course</title>
+</head>
+<body>
+    <main>
+        <h1>Registration Form for Automation Testing Course</h1>
+        <form action="/submit" method="POST">
+        <section>
+            <h2>1. Thong tin ca nhan</h2>
+            <!-- Username-->
+             <div>
+                <label for="Username">Ho va ten:* </label>
+                <input type="text" id="Username" name="username" 
+                minlength=3 maxlength=50 placeholder="Nhap ho va ten" required>
+             </div>
+             <!-- Email-->
+              <div>
+                <label for="Email">Email:* </label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+              </div>
+            <!-- SDT-->
+             <div>
+                <label for="SDT">SDT:* </label>
+                <input type="tel" id="SDT" name="SDT" pattern="[0-9{10}]" required>
+             </div>
+            <!-- Ngay sinh-->
+             <div>
+                <label for="birthday">Ngay sinh: </label>
+                <input type="date" id="birthday" name="birthay">
+             </div>
+        </section>
+        <section>
+            <h2>2. Thong tin hoc van</h2>
+            <div>
+                <label for="edu">Trinh do hoc van: </label>
+                <select id="edu" name="education">
+                    <option value="">--Chon trinh do hoc van--</option>
+                    <option value="high">Trung hoc</option>
+                    <option value="col">Cao dang</option>
+                    <option value="uni">Dai hoc</option>
+                    <option value="bal">Thac si</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Kinh nghiem IT: </legend>
+
+                <input type="radio" id="1" name="experience" value="chua co">
+                <label for="1">Chua co</label>
+
+                <input type="radio" id="2" name="experience" value="Dưới 1 năm">
+                <label for="2">Duoi 1 nam</label>
+
+                <input type="radio" id="3" name="experience" value="1-3 năm">
+                <label for="3">1-3 nam</label> 
+
+                <input type="radio" id="4" name="experience" value="Trên 3 năm">
+                <label for="4">Tren 3 nam</label>
+            </fieldset>
+        </section>
+        <section>
+            <h2>3. Xac nhan</h2>
+            <fieldset>
+                <legend>Toi dong y voi* </legend>
+                <input type="checkbox" id="dieukhoan" required >
+                <label for="dieukhoan"><a href="https://google.com" target="_blank">Dieu khoan</a> </label>
+            </fieldset>
+            <div>
+                <button type="submit">Dang ky</button>
+            </div>
+        </section>
+        <p><small>* Trường bắt buộc</small></p>
+        </form>
+    </main>
+</body>
+</html>
