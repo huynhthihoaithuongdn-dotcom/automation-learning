@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng ký tài khoản</title>
+</head>
+<body>
+    <main>
+        <h1>Account registeration</h1>
+        <form action="/register" method="post">
+            <section>
+                <h2>1. Login information</h2>
+                <div>
+                    <label for="username">*Username: </label>
+                    <input type="text" id="username" name="username" minlength="3" maxlength="20" required>
+                </div>
+                <diV>
+                    <label for="email">*Email: </label>
+                    <input type="email" id="email" name="email" required>
+                </diV>
+                <div>
+                    <label for="password">*Password: </label>
+                    <input type="text" id="password" name="password" minlength="8" required>
+                </div>
+                <div>
+                    <label for="cfpassword">*Confirm password: </label>
+                    <input type="text" id="cfpassword" name="cfpassword" required>
+                </div>
+            </section> 
+            <section>
+                <h2>2. Personal information</h2>
+                <div>
+                    <label for="Ho va ten">*Ho va ten: </label>
+                    <input type="text" id="Ho va ten" name="ho va ten" required>
+                </div>
+                <div>
+                    <label for="phone">*Phone number: </label>
+                    <input type="tel" id="phone" name="phone number" required>
+                </div>
+                <div>
+                    <label for="dob">*Ngay sinh: </label>
+                    <input type="date" id="dob" name="date of birthay">
+                </div>
+                <div>
+                    <label for="cfpassword">*Confirm password: </label>
+                    <input type="text" id="cfpassword" name="cfpassword" required>
+                </div>
+                <fieldset>
+                    <legend>Gioi tinh: </legend>
+                    <input type="radio" id="male" name="gender" value="1">
+                    <label for="male">Nam</label>
+
+                    <input type="radio" id="female" name="gender" value="2">
+                    <label for="female">Nu</label>
+
+                    <input type="radio" id="other" name="gender" value="3">
+                    <label for="other">Khac</label>
+                </fieldset>
+            </section>
+            <section>
+                <h2>3. Dia chi giao hang</h2>
+                <div>
+                    <label for="details">Dia chi chi tiet</label>
+                    <textarea id="details" name="address" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="city">Thanh pho</label>
+                    <select id="city" name="city">
+                        <option value="">Chon tinh/thanh pho</option>
+                        <option value="HN">Ha Noi</option>
+                        <option value="HCM">TP. Ho Chi Minh</option>
+                        <option value="DN">Da Nang</option>
+                        <option value="HP">Hai Phong</option>
+                        <option value="CT">Can Tho</option>
+                    </select>
+                </div>
+            </section>
+            <section>
+                <h2>4. So thich mua sam</h2>
+                <div>
+                    <fieldset>
+                        <legend>So thich</legend>
+                        <input type="checkbox" id="fashion" value="1">
+                        <label for="fashion">Thoi trang</label>
+
+                        <input type="checkbox" id="technology" value="2">
+                        <label for="technology">Dien tu</label>
+
+                        <input type="checkbox" id="book" value="3">
+                        <label for="book">Sach</label>
+
+                        <input type="checkbox" id="food" value="4">
+                        <label for="food">Thuc pham</label>
+
+                        <input type="checkbox" id="cosmetic" value="5">
+                        <label for="cosmetic">My pham</label>
+                    </fieldset>
+                </div>
+            </section>
+            <section>
+                <h2>5. Xac nhan</h2>
+                <Fieldset>
+                    <input type="checkbox" id="term" required>
+                    <label for="term">Dong y dieu khoan</label>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" id="newsletter">
+                    <label for="newsletter">Nhan ban tin</label>
+                </fieldset>
+                <div>
+                    <button type="submit">Dang ky</button>
+                    <button type="reset">Huy</button>
+                </div>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
