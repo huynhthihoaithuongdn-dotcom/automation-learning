@@ -13,4 +13,3 @@ if (n>0) {
 } else {
     console.log('Gia tri ban nhap la so am');
 };
-z
