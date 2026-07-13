@@ -9,6 +9,9 @@ const multiply = (a,b) => a*b;
 console.log('multiply(3, 7):', multiply(3,7));
 
 // 3. greetUser
+//way1: 
 const greetUser = (name) => 'Xin chao, ' + name + '!';
 console.log('greetUser:', greetUser('Khanh'));
-// In kết quả
+//way2: 
+const greetUserNew = (name) => `Xin chao, ${name}!`;
+console.log('greetUser:', greetUserNew('Khanh'));
